@@ -12,14 +12,13 @@ function addTask (e){
         
         task = input.value;
         displayTask(task);
-        clearInput();
+       // clearInput();
     }
+    e.target.reset();
     
 };
 
-function clearInput(){
-    input.value='';
-}
+
 function displayTask(task){
     list.insertAdjacentHTML('beforeend',`<li class="todo__list-item">${task}<span class="todo__list-remove">X</span></li>`);
 }
@@ -28,8 +27,23 @@ function removeItem(e){
         e.target.closest('.todo__list-item').remove();
     }
 }
+function done(e){
+    if(e.target && e.target.nodeName == 'LI'){
+        e.target.classList.contains('done') ? e.target.classList.remove('done') : e.target.classList.add('done');
+        
+    
+    }
+}
+
+
+function updateLocalStorage(){
+   
+}
+updateLocalStorage();
+console.log(list);
 
 form.addEventListener('submit',addTask);
 list.addEventListener('click',removeItem);
+list.addEventListener('click',done);
 
 

@@ -53,6 +53,9 @@ margin-top: 3%;
 }
 .todo__list-item{
     padding: 1.5rem;
+    
+}
+.todo__list-item:not(:last-child){
     border-bottom: 1px solid white;
 }
 .todo__list-remove{
@@ -64,4 +67,9 @@ transition: all .5s;
 .todo__list-remove:hover{
    transform:  rotate(180deg);
     overflow: hidden;
+}
+.done{
+    background-color: greenyellow;
+    text-decoration: line-through;
+    transition: .4s all;
 }
