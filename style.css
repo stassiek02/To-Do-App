@@ -1,75 +1,70 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.todo{
-    transform: translate(-50%,-50%);
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 30%;
-    background-color: orange;
-    box-shadow: 0px 3px 20px 0px rgba(173,173,173,1);
-    font-family: 'Lato';
-    backface-visibility: hidden;
-    overflow: hidden;
+.todo {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 30%;
+  background-color: orange;
+  box-shadow: 0px 3px 20px 0px rgba(173, 173, 173, 1);
+  font-family: "Lato";
+  backface-visibility: hidden;
+  overflow: hidden;
 }
-.todo__form{
-padding: 10px;
-width: 100%;
-text-align: center;
+.todo__form {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
 }
-.todo__form-input{
-    width: 80%;
-    height: 30px;
-    border-radius: 0px;
-    outline: none;
-    border: none;
-    padding-left: 10px;
+.todo__form-input {
+  width: 80%;
+  height: 30px;
+  border-radius: 0px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
 }
-.todo__form-btn{
-    padding: 4px 10px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    transition: all 0.3s;
+.todo__form-btn {
+  padding: 4px 10px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: all 0.3s;
 }
-.todo__form-btn:hover{
-    color: #999;
-    background-color: rgba(255,255,255,0.5);
-    
-
+.todo__form-btn:hover {
+  color: #999;
+  background-color: rgba(255, 255, 255, 0.5);
 }
-.todo__task{
-background-color: orangered;
-margin-top: 3%;
+.todo__task {
+  background-color: orangered;
 }
-.todo__list{
-    list-style: none;
-    font-size: 1.3rem;
-
+.todo__list {
+  list-style: none;
+  font-size: 1.3rem;
 }
-.todo__list-item{
-    padding: 1.5rem;
-    
+.todo__list-item {
+  padding: 1.5rem;
 }
-.todo__list-item:not(:last-child){
-    border-bottom: 1px solid white;
+.todo__list-item:not(:last-child) {
+  border-bottom: 1px solid white;
 }
-.todo__list-remove{
-float: right;
-color: white;
-cursor: pointer;
-transition: all .5s;
+.todo__list-remove {
+  float: right;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
 }
-.todo__list-remove:hover{
-   transform:  rotate(180deg);
-    overflow: hidden;
+.todo__list-remove:hover {
+  transform: rotate(180deg);
+  overflow: hidden;
 }
-.done{
-    background-color: greenyellow;
-    text-decoration: line-through;
-    transition: .4s all;
+.done {
+  background-color: greenyellow;
+  text-decoration: line-through;
+  transition: 0.4s all;
 }
