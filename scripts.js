@@ -43,7 +43,9 @@ function updateLocalStorage() {
 }
 function loadFromLocalStorage() {
   let listTasks = localStorage.getItem("ListTasks");
-  list.insertAdjacentHTML("beforeend", listTasks);
+  if(!listTasks){
+      list.insertAdjacentHTML("beforeend", listTasks);
+  }
 }
 window.onload = loadFromLocalStorage;
 
