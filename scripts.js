@@ -43,7 +43,7 @@ function updateLocalStorage() {
 }
 function loadFromLocalStorage() {
   let listTasks = localStorage.getItem("ListTasks");
-  if(!listTasks){
+  if(listTasks !== null){
       list.insertAdjacentHTML("beforeend", listTasks);
   }
 }
